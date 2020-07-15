@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+
+    <title>Admin pannel</title>
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div aria-label="breadcrumb mb-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">user</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">profile settings</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 d-md-block">
+                        <div class="card bg-common card-left">
+                            <div class="card-body">
+                                <nav class="nav d-md-block d-none">
+                                    <a data-toggle='tab' class="nav-link" href="#profile"><i class="fas fa-user"></i> &nbsp;Profile</a>
+                                    <a data-toggle='tab' class="nav-link" href="#account"><i class="fas fa-user-cog"></i> &nbsp;Account Setting</a>
+                                    <a data-toggle='tab' class="nav-link" href="#security"><i class="fas fa-user-shield"></i> &nbsp;Security</a>
+                                    <a data-toggle='tab' class="nav-link" href="#notification"><i class="fas fa-bell"></i> &nbsp;Notifications</a>
+                                    <a data-toggle='tab' class="nav-link" href="#billings"><i class="fas fa-money-check-alt"></i> &nbsp;Billings</a>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card d-md-none">
+                            <div class="card-header border-bottom  mb-3">
+                                <ul class="nav nav-tabs card-header-tabs nav-fill">
+                                    <li class="nav-item">
+                                        <a data-toggle='tab' class="nav-link active" href="#profile"><i class="fas fa-user"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle='tab' class="nav-link" href="#account"><i class="fas fa-user-cog"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle='tab' class="nav-link" href="#security"><i class="fas fa-user-shield"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle='tab' class="nav-link" href="#notification"><i class="fas fa-bell"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle='tab' class="nav-link" href="#billings"><i class="fas fa-money-check-alt"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" card card-body tab-content border-12">
+                            <div class="tab-pane active" id="profile">
+                                <h5>YOUR PROFILE INFORMATION</h5>
+                                <hr>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Full Name</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your name">
+                                        <small id="emailHelp" class="form-text text-muted">please enter your name</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Your Bio</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                        <small>
+                                            Please enter your full bio here
+                                        </small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">URLS</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="http://127.0.0.1:5500/index/index.html?">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Location</label>
+                                        <input type="location" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="please enter your proper location">
+                                        <small id="emailHelp" class="form-text text-muted">
+                                            enter your location
+                                        </small>
+                                    </div>
+                                    <div class="form-group form-text text-muted small">
+                                        All of the fields on this page are optional and can be deleted at any time ,and by filling them out ,you are giving us consent to share this data wherever your profile appeares
+                                    </div>
+                                    <button class="btn btn-outline-info" type="button">
+                                        Update profile
+                                    </button>
+                                    <button class="btn btn-outline-info" type="reset">
+                                        Reset changes
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="tab-pane " id="account">
+                                <h5>ACCOUNT SETTINGS</h5>
+                                <hr>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">User name</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="dfkldfd@gmail.com">
+                                        <small id="emailHelp" class="form-text text-muted">
+                                            After changing your username your old username become new
+                                        </small>
+                                    </div>
+
+                                    <hr>
+                                    <form>
+                                        <div class="mb-3">
+                                            <lebel for="exampleFormControlInput1" class="form-lebel text-danger">
+                                                Delete Account
+                                            </lebel>
+                                            <p class="text-muted">
+                                                Once you delete your account,there is no going back.please be certain.
+                                            </p>
+
+                                        </div>
+                                        <br>
+                                        <button class="btn bg-danger" type="reset">
+                                        Delete Account
+                                    </button>
+
+                                    </form>
+                                </form>
+
+                            </div>
+                            <div class="tab-pane " id="security">
+                                <h5>SECURITY SETTINGS</h5>
+                                <hr>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1"> Change Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your old password">
+                                        <input type="password" class="form-control mt-3 mb-3" id="exampleInputPassword1" placeholder="New Password">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm New Password">
+                                    </div>
+                                </form>
+                                <hr>
+                                <form>
+                                    <div class="form-group">
+                                        <label>
+                                            <p style="background-color:green; padding-left: 4px;border-radius: 4px;">two factor Authentication</p>
+                                        
+                                        <button class="btn btn-outline-info d-block" type="submit">
+                                          enable two-factors Authentication
+                                        </button>
+                                        </label>
+                                        <p class="text-muted">Two factor Authentication adds an additional layers of security to your account by requriring more than just a password to log in</p>
+                                    </div>
+
+                                </form>
+                                <hr>
+                                <form>
+                                    <div class="form-group">
+                                        <label>
+                                            <p style="background-color:green; padding-left: 4px;border-radius: 4px;">Sessions</p>
+                                        
+                                        <button class="btn btn-outline-info d-block" type="submit">
+                                          enable two-factors Authentication
+                                        </button>
+                                        </label>
+                                        <p class="text-muted small">
+                                            this is a list of devices that have logged into your account. Revoke any sessions that you do not recogniese.
+                                        </p>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div>
+                                                    <h6>
+                                                        Pokhara 28.2896 deg N, 83.9867 deg E
+                                                    </h6>
+                                                    <small class="text-muted">
+                                                      your currnet session seen in Nepal
+                                                    </small>
+                                                </div>
+                                                <button class="btn btn-light btn-sm ml-auto" type="button">To know more info</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="tab-pane " id="notification">
+                                <h6>NOTIFICATIONS SETTINGS</h6>
+                                <hr>
+                                <h5>Security Alerts</h5>
+                                <small class="text-muted">Recieve security alert notification via email</small>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Email each time a vulnerability is found</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Email a digest summary of vulnerability</label>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="d-block mb-2">SMS Notifications</label>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            comments
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Update from people
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Remainders
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Events
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Page You Follow
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane " id="billings">
+                                <h6>BILLINGS SETTINGS</h6>
+                                <hr>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="" class="d-block">Payment Method</label>
+                                        <small class="text-muted small">You have not added a payment method</small>
+                                        <br>
+                                        <button class="btn btn-outline-info mt-3">Add payment methods</button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="d-block mb-3">Payment History</label>
+                                        <div class="border p-3 text-center">You have not made any payment</div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
